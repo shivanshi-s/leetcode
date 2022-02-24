@@ -17,7 +17,10 @@ public:
                 three = num;
             }
         }
-        
-        return three == LONG_MIN ? one : three;
+        if(three == LONG_MIN)
+            return one;
+        else
+            return three;
+        // return three == LONG_MIN ? one : three;
     }
 };
