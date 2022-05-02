@@ -7,9 +7,9 @@ public:
 //         sorting the array
         sort(nums.begin(),nums.end());
 //         using the two-pointer approach
-        for(int i = 0 ; i < n/2 ; i++)
+        for(int i = 0 ; i < n ; i++)
         {
-            int temp = max(sum, nums[i]+nums[n-1-i]);
+            int temp = nums[i]+nums[n-1-i];
             if (temp > sum )
                 sum = temp;
         }
