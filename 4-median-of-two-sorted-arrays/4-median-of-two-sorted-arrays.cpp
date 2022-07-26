@@ -12,6 +12,6 @@ public:
         if(n%2 != 0 )
             return nums1[n/2];
         else
-            return (nums1[n/2]+nums1[n/2-1])/2.00000;
+            return (nums1[n/2]+nums1[n/2-1])/2.0000;
     }
 };
