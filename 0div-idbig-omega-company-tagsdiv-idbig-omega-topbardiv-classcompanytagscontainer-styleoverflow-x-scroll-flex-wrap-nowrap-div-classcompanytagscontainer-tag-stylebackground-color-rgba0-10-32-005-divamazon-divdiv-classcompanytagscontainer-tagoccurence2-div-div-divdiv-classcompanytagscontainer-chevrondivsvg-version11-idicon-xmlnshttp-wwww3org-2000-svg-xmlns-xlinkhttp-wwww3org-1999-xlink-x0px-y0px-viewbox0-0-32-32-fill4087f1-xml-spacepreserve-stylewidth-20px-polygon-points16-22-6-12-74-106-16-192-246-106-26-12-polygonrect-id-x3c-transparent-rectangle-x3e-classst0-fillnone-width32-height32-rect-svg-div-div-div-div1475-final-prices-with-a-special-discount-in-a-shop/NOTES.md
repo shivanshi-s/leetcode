@@ -1,0 +1,5 @@
+stk is used to hold the indices of the items for which we have not yet found a 'next less or equal' price.
+We iterate over the prices. Inside the loop, we check if the stack is not empty and the price of the current item is less than or equal to the price of the item at the index on top of the stack. If so, we subtract the price of the current item from the price of the item at the index on top of the stack and pop the index from the stack. This is the 'discount' step.
+After the 'discount' step, we add the index of the current item to the stack.
+At the end of the function, we return the prices array, which now contains the final prices after discounts.
+This algorithm has a time complexity of O(n), where n is the number of items, because each item is pushed and popped from the stack exactly once. The space complexity is also O(n), as in the worst case, all items could be on the stack at the same time
